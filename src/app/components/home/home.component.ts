@@ -41,7 +41,10 @@ export class HomeComponent {
       params = params.set('sortBy', sort);
     }
     this.http
-      .get<APIResponse<Game>>(environment.backEndURL + `/ListGames`, { params })
+      // .get<APIResponse<Game>>(`${environment.backEndURL}/ListGames`, { params })
+      .get<APIResponse<Game>>(`${environment.backEndURL}/ListGames`, {
+        params,
+      })
       .subscribe(
         (response: APIResponse<Game>) => {
           this.gamesData = response.data;

@@ -1,5 +1,6 @@
 export const environment = {
   production: false,
   title: 'Dev Environment',
-  backEndURL: 'gamerpediaservice.onrender.com',
+  // backEndURL: 'http://localhost:6030s',
+  backEndURL: 'https://gamerpediaservice.onrender.com',
 };

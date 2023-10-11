@@ -45,7 +45,7 @@ export class DetailsComponent {
     console.log('gameDetails called ' + gameId.length + '.....');
 
     this.http
-      .get<Game>(environment.backEndURL + `/GameDetails?gameId=${gameId}`)
+      .get<Game>(`${environment.backEndURL}/GameDetails?gameId=${gameId}`)
       .subscribe(
         (data: Game) => {
           this.game = data;
