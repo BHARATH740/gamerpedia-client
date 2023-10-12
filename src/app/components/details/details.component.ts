@@ -31,7 +31,7 @@ export class DetailsComponent {
   gameRating: number = 0;
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
-    // this.http.get(environment.backEndURL + `GameDetails?gameId=${}`)
+    // this.http.get(environment.backEndURL + `GameDetails?gameId=${}`)fgs
   }
 
   ngOnInit(): void {
