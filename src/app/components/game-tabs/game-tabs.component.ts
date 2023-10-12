@@ -22,7 +22,12 @@ export class GameTabsComponent {
     publishers: [{ name: '' }],
     ratings: [{ id: 0, title: '', count: 0 }],
     screenshots: [{ image: '' }],
-    trailers: [{ data: { max: '' } }],
+    trailers: [
+      {
+        name: '',
+        data: { max: '' },
+      },
+    ],
   };
 
   constructor() {}

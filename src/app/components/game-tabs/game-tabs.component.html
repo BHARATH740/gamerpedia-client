@@ -42,14 +42,13 @@
       />
     </mat-tab>
     <mat-tab label="Trailers" *ngIf="game.trailers?.length">
-      <video
-        class="game-trailer"
-        controls
-        *ngFor="let trailer of game.trailers"
-      >
-        <source src="{{ trailer?.data?.max }}" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div *ngFor="let trailer of game.trailers">
+        <video class="game-trailer" controls>
+          <source src="{{ trailer?.data?.max }}" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p>{{ trailer?.name }}</p>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>

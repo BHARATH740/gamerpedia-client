@@ -51,6 +51,7 @@ export interface Screenshots {
 }
 
 export interface Trailer {
+  name: string;
   data: {
     max: string;
   };

@@ -26,7 +26,7 @@ export class DetailsComponent {
     publishers: [{ name: '' }],
     ratings: [{ id: 0, title: '', count: 0 }],
     screenshots: [{ image: '' }],
-    trailers: [{ data: { max: '' } }],
+    trailers: [{ name: '', data: { max: '' } }],
   };
   gameRating: number = 0;
 
